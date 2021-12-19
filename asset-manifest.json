@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/christmas-task/static/css/main.beadea40.chunk.css",
+    "main.js": "/christmas-task/static/js/main.317cb812.chunk.js",
+    "main.js.map": "/christmas-task/static/js/main.317cb812.chunk.js.map",
+    "runtime-main.js": "/christmas-task/static/js/runtime-main.ce04310c.js",
+    "runtime-main.js.map": "/christmas-task/static/js/runtime-main.ce04310c.js.map",
+    "static/js/2.3d3e0651.chunk.js": "/christmas-task/static/js/2.3d3e0651.chunk.js",
+    "static/js/2.3d3e0651.chunk.js.map": "/christmas-task/static/js/2.3d3e0651.chunk.js.map",
+    "static/js/3.cd408e54.chunk.js": "/christmas-task/static/js/3.cd408e54.chunk.js",
+    "static/js/3.cd408e54.chunk.js.map": "/christmas-task/static/js/3.cd408e54.chunk.js.map",
+    "index.html": "/christmas-task/index.html",
+    "static/css/main.beadea40.chunk.css.map": "/christmas-task/static/css/main.beadea40.chunk.css.map",
+    "static/js/2.3d3e0651.chunk.js.LICENSE.txt": "/christmas-task/static/js/2.3d3e0651.chunk.js.LICENSE.txt",
+    "static/media/selectorToys.css": "/christmas-task/static/media/arrow-down.f0eaf98d.svg",
+    "static/media/filtredToys.css": "/christmas-task/static/media/toy.d8ea3c17.svg",
+    "static/media/start.css": "/christmas-task/static/media/bg.22ad0824.jpg",
+    "static/media/footer.css": "/christmas-task/static/media/rss.2418248d.svg",
+    "static/media/search.34d5c2d6.svg": "/christmas-task/static/media/search.34d5c2d6.svg",
+    "static/media/header.css": "/christmas-task/static/media/tree.af868a5c.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ce04310c.js",
+    "static/js/2.3d3e0651.chunk.js",
+    "static/css/main.beadea40.chunk.css",
+    "static/js/main.317cb812.chunk.js"
+  ]
+}
