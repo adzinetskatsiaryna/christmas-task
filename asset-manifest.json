@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/christmas-task/static/css/main.beadea40.chunk.css",
+    "main.css": "/christmas-task/static/css/main.239db8d4.chunk.css",
     "main.js": "/christmas-task/static/js/main.54573b44.chunk.js",
     "main.js.map": "/christmas-task/static/js/main.54573b44.chunk.js.map",
     "runtime-main.js": "/christmas-task/static/js/runtime-main.ce04310c.js",
@@ -10,7 +10,7 @@
     "static/js/3.cd408e54.chunk.js": "/christmas-task/static/js/3.cd408e54.chunk.js",
     "static/js/3.cd408e54.chunk.js.map": "/christmas-task/static/js/3.cd408e54.chunk.js.map",
     "index.html": "/christmas-task/index.html",
-    "static/css/main.beadea40.chunk.css.map": "/christmas-task/static/css/main.beadea40.chunk.css.map",
+    "static/css/main.239db8d4.chunk.css.map": "/christmas-task/static/css/main.239db8d4.chunk.css.map",
     "static/js/2.3d3e0651.chunk.js.LICENSE.txt": "/christmas-task/static/js/2.3d3e0651.chunk.js.LICENSE.txt",
     "static/media/selectorToys.css": "/christmas-task/static/media/arrow-down.f0eaf98d.svg",
     "static/media/filtredToys.css": "/christmas-task/static/media/toy.d8ea3c17.svg",
@@ -22,7 +22,7 @@
   "entrypoints": [
     "static/js/runtime-main.ce04310c.js",
     "static/js/2.3d3e0651.chunk.js",
-    "static/css/main.beadea40.chunk.css",
+    "static/css/main.239db8d4.chunk.css",
     "static/js/main.54573b44.chunk.js"
   ]
 }
