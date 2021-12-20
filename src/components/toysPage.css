@@ -67,7 +67,7 @@
     max-width: 100%;
     object-fit: cover;
     margin-bottom: 15px;
-    margin: 0 0 0 20px 0;
+    margin-bottom: 20px;
 }
 .filtres-containe{
     display: flex;
