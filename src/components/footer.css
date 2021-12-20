@@ -1,0 +1,34 @@
+.link-gh-pages{
+    background-image: url(../assets/svg/github.svg);
+    width: 40px;
+    height: 40px;
+    display: block;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.footer-container{
+    max-width: 1140px;
+    width: 100%;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+footer{
+    background-color:  #192F2D;
+    font-family: 'Neucha', cursive;
+    color: #fff;
+    padding: 20px 0;
+    font-size: 22px;
+}
+.link-rss{
+    background-image: url(../assets/svg/rss.svg);
+    width: 160px;
+    height: 60px;
+    display: block;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}

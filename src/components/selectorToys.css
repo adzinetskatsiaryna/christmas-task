@@ -1,0 +1,35 @@
+.select-wrapper {
+    position: relative;
+    width: 300px;
+    margin: 20px 0;
+    border: 1px solid rgba(36, 197, 219, 0.15);
+    border-radius: 30px; 
+    
+  }
+  
+  .select-wrapper:hover {
+    box-shadow: 0px 0px 3px gray;
+  }
+  
+  .select-wrapper select {
+    font-family: 'Neucha', cursive;
+    color: gray;
+    width: 300px;
+    height: 40px;
+    padding: 0 20px 0 7px;
+    border-radius: 30px; 
+    background: transparent;
+    border: none;
+    outline: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    background: url('../assets/svg/arrow-down.svg') no-repeat right center;
+    outline: 0;      
+  }
+  .select-wrapper select::-ms-expand{
+      display: none;             
+  }
+  
+ 

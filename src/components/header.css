@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Neucha&display=swap');
+.header-wrapper{
+    background-color: #192F2D;
+    padding: 20px 0;
+}
+.header-container {
+    max-width: 1140px;
+    width: 100%;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.logo{
+    -webkit-mask-size: contain;
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+    -webkit-mask-image: url(../assets/svg/tree.svg);
+    background-color: white;
+    width: 64px;
+    height: 64px; 
+    display: inline-block;
+    transition: .5s;
+}
+.link-active{
+    font-family: 'Neucha', cursive;
+    font-size: 42px;
+    line-height: 46px;
+    text-transform: uppercase;
+    color: #2e756f;
+    padding: 5px 20px;
+    transition: .5s;
+}
+.logo:hover{
+    background-color: #2e756f;
+    transition: .5s;
+}
+
+.toys-link, .tree-link{
+    font-family: 'Neucha', cursive;
+    font-size: 42px;
+    line-height: 46px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    padding: 5px 20px;
+    transition: .5s;
+}
+.toys-link:hover, .tree-link:hover{
+    color: #2e756f;
+    transition: .5s;
+}
+
+.count{
+    font-family: 'Neucha', cursive;
+    font-size: 20px;
+    color: #FFFFFF; 
+    font-weight: bold; 
+    border: 2px solid #ffff;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2e756f;
+}
