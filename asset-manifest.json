@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/christmas-task/static/css/main.d7df8830.chunk.css",
-    "main.js": "/christmas-task/static/js/main.48057b3a.chunk.js",
-    "main.js.map": "/christmas-task/static/js/main.48057b3a.chunk.js.map",
+    "main.js": "/christmas-task/static/js/main.4261a11f.chunk.js",
+    "main.js.map": "/christmas-task/static/js/main.4261a11f.chunk.js.map",
     "runtime-main.js": "/christmas-task/static/js/runtime-main.60620363.js",
     "runtime-main.js.map": "/christmas-task/static/js/runtime-main.60620363.js.map",
     "static/js/2.c708b323.chunk.js": "/christmas-task/static/js/2.c708b323.chunk.js",
@@ -24,6 +24,6 @@
     "static/js/runtime-main.60620363.js",
     "static/js/2.c708b323.chunk.js",
     "static/css/main.d7df8830.chunk.css",
-    "static/js/main.48057b3a.chunk.js"
+    "static/js/main.4261a11f.chunk.js"
   ]
 }
