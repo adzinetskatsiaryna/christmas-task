@@ -61,10 +61,11 @@ const ToysReducer = (state: InitialState = initialState, action: ActionType): In
         };
 
     case 'ADD_DELETE_SELECTED_TOYS':
-      
+  
       let selectedToy: ToyType | undefined
       let newArr: Array<ToyType> = []
       if(action.isSelected){
+        // debugger
         selectedToy = state.filtredArr.find(t=>t.num===action.num)
         if(selectedToy){
           newArr = [...state.selectedArr, {...selectedToy, isSelect: action.isSelected}]
@@ -78,8 +79,14 @@ const ToysReducer = (state: InitialState = initialState, action: ActionType): In
         filtredArr: [...state.filtredArr.map(t=>{
           if(t.num!==action.num){
             return {...t}
-          } return {...t, isSelect: action.isSelected}
-        })]    
+          } else {return {...t, isSelect: action.isSelected}}
+        })],
+        toys: [...state.toys.map(t=>{
+          if(t.num!==action.num){
+            return {...t}
+          } else{
+            return {...t, isSelect: action.isSelected}}
+        })]   
       };  
        default: return state
    }

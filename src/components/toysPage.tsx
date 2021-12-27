@@ -39,21 +39,11 @@ const ToysPage = ()=>{
     let filtredArrFromRedux = useSelector<ReducerAppType,  Array<ToyType>>((store) => store.toys.filtredArr);
     const selectedArr = useSelector<ReducerAppType,  Array<ToyType>>((store) => store.toys.selectedArr);
 
-    useEffect(() => {
-      dispatch(getToys()) 
-      
-    }, []);
-   
-
     const [filtredArr, setFiltredArr] = useState<Array<ToyType>>([])
 
     useEffect(()=>{
       setFiltredArr(filtredArrFromRedux)
     }, [filtredArrFromRedux])
-
-   useEffect(()=>{
-
-   },[filtredArr])
 
    const changeFilter = (color?: string, form?: string, size?: string, isLik?: boolean) => {
 
@@ -214,7 +204,7 @@ const ToysPage = ()=>{
       } else{
          setIsOpen(true);
       }
-           
+
    }
 
   
@@ -252,7 +242,7 @@ const ToysPage = ()=>{
 
    },[filtredArr])
 
-   console.log(filtredArr)
+
    const closeSecondPopup=()=>{
       setIsActive(false)
    }

@@ -91,10 +91,9 @@ const TreePage = ()=>{
  }, []);
 
  const arrForDropAsString = localStorage.getItem('arr')
- //@ts-ignore
- const arr = JSON.parse(arrForDropAsString)
- const [arrForDrop, setArrForDrop]= useState<Array<ToyType>>([])
 
+ const arr: ToyType[] = JSON.parse(arrForDropAsString as string)
+ const [arrForDrop, setArrForDrop]= useState<Array<ToyType>>(arr ? arr : [])
 
  useEffect (()=>{
    const toysArrForDrag = toys.slice(0, 20)
@@ -106,7 +105,7 @@ const TreePage = ()=>{
       setArrForDrop(selectedArr.map(el=>({...el, count: +el.count})))
    }
    
-}, [])
+}, [toys])
 
 
 const saveState =()=>{
