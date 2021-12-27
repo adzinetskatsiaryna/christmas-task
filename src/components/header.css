@@ -24,6 +24,7 @@
     display: inline-block;
     transition: .5s;
 }
+
 .link-active{
     font-family: 'Neucha', cursive;
     font-size: 42px;
@@ -51,7 +52,9 @@
     color: #2e756f;
     transition: .5s;
 }
-
+.active{
+    color: #9D8665;
+}
 .count{
     font-family: 'Neucha', cursive;
     font-size: 20px;

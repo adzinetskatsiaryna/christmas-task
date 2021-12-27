@@ -1,0 +1,328 @@
+
+.tree-page-container{
+    display: flex;
+    max-width: 1920px;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: space-between;
+    font-family: 'Neucha', cursive;
+    color: #fff;
+    padding: 0 20px;
+    
+}
+h2{
+    margin: 0;
+}
+.tree-container{
+    max-width: 320px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    column-gap: 10px;
+    row-gap: 20px;
+    flex-wrap: wrap;
+    padding: 20px 0;
+}
+.tree1, .tree2, .tree3, .tree4, .tree5, .tree6{
+    max-width: 134px;
+    height: 134px;
+    width: 100%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(109.56% 109.56% at 0% -2.94%, rgba(255, 255, 255, 0.5) 0%, rgba(179, 246, 255, 0.5) 100%);
+    backdrop-filter: blur(4px);
+    border-radius: 10px;
+    transition: .5s;
+}
+.tree-container img{
+    max-width: 91px;
+    width: 100%;
+    display: block;
+    object-fit: cover;
+    height: 120px;
+}
+.bg-container{
+    max-width: 320px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 2px;
+    row-gap: 5px;
+    flex-wrap: wrap;
+    padding: 20px 0;
+}
+.bg1, .bg2, .bg3, .bg4, .bg5, .bg6, .bg7, .bg8, .bg9, .bg10{
+    max-width: 60px;
+    height: 60px;
+    width: 100%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(109.56% 109.56% at 0% -2.94%, rgba(255, 255, 255, 0.5) 0%, rgba(179, 246, 255, 0.5) 100%);
+    backdrop-filter: blur(4px);
+    border-radius: 10px;
+    transition: .5s;
+}
+.bg-container img{
+    max-width: 50px;
+    width: 100%;
+    object-fit: cover;
+    height: 50px;
+}
+.tree-page{
+    background-image: url(../assets/bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 25px 0;
+    backdrop-filter: blur(20px);
+}
+.effect-container{
+    display: flex;
+    max-width: 250px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+.audio{
+    -webkit-mask-size: contain;
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+    -webkit-mask-image: url(../assets/svg/audio.svg); 
+    background-color: #ffff;
+    width: 36px;
+    height: 36px;
+    cursor: pointer;
+    transition: .5s;
+}
+.close{
+  -webkit-mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  -webkit-mask-image: url(../assets/svg/audio.svg); 
+  background-color:  #9D8665;
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+  transition: .5s;
+}
+.snow{
+    -webkit-mask-size: contain;
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+    -webkit-mask-image: url(../assets/svg/snow.svg); 
+    background-color: #ffff;
+    width: 36px;
+    height: 36px;
+    cursor: pointer;
+    transition: .5s; 
+}
+.un-snow{
+  -webkit-mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  -webkit-mask-image: url(../assets/svg/snow.svg); 
+  background-color: #9D8665;
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+  transition: .5s;
+}
+.tree-btn{
+  border: 2px solid transparent;
+  border-radius: 5px;
+  font-family: 'Neucha', cursive;
+  color: #FFFFFF;
+  font-size: 15px;
+  background: radial-gradient(118.88% 606.86% at 0% 0%, rgba(36, 197, 219, 0.15) 0%, rgba(36, 197, 219, 0) 100%);
+  backdrop-filter: blur(31px);
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: .5s;
+}
+.selected-background{
+    max-width: 760px;
+    width: 100%;
+    min-height: 800px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.selected-tree{
+    max-width: 550px;
+    min-height: 800px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.snowflake {
+    color: #fff;
+    font-size: 1em;
+    font-family: Arial, sans-serif;
+  }
+  @-webkit-keyframes snowflakes-fall {
+    0% {
+      top: -10%;
+    }
+    100% {
+      top: 100%;
+    }
+  }
+  @-webkit-keyframes snowflakes-shake {
+    0%,
+    100% {
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+    }
+    50% {
+      -webkit-transform: translateX(80px);
+      transform: translateX(80px);
+    }
+  }
+  @keyframes snowflakes-fall {
+    0% {
+      top: -10%;
+    }
+    100% {
+      top: 100%;
+    }
+  }
+  @keyframes snowflakes-shake {
+    0%,
+    100% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(80px);
+    }
+  }
+  .snow1 {
+    position: fixed;
+    top: -10%;
+    z-index: 9999;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: default;
+    color: #fff;
+    -webkit-animation-name: snowflakes-fall, snowflakes-shake;
+    -webkit-animation-duration: 10s, 3s;
+    -webkit-animation-timing-function: linear, ease-in-out;
+    -webkit-animation-iteration-count: infinite, infinite;
+    -webkit-animation-play-state: running, running;
+    animation-name: snowflakes-fall, snowflakes-shake;
+    animation-duration: 10s, 3s;
+    animation-timing-function: linear, ease-in-out;
+    animation-iteration-count: infinite, infinite;
+    animation-play-state: running, running;
+  }
+  .snow1:nth-of-type(0) {
+    left: 1%;
+    -webkit-animation-delay: 0s, 0s;
+    animation-delay: 0s, 0s;
+  }
+  .snow1:nth-of-type(1) {
+    left: 10%;
+    -webkit-animation-delay: 1s, 1s;
+    animation-delay: 1s, 1s;
+  } 
+  .snow1:nth-of-type(2) {
+    left: 20%;
+    -webkit-animation-delay: 6s, 0.5s;
+    animation-delay: 6s, 0.5s;
+  } 
+  .snow1:nth-of-type(3) {
+    left: 30%;
+    -webkit-animation-delay: 4s, 2s;
+    animation-delay: 4s, 2s;
+  }
+  .snow1:nth-of-type(4) {
+    left: 40%;
+    -webkit-animation-delay: 2s, 2s;
+    animation-delay: 2s, 2s;
+  }
+  .snow1:nth-of-type(5) {
+    left: 50%;
+    -webkit-animation-delay: 8s, 3s;
+    animation-delay: 8s, 3s;
+  }
+  .snow1:nth-of-type(6) {
+    left: 60%;
+    -webkit-animation-delay: 6s, 2s;
+    animation-delay: 6s, 2s;
+  }
+  .snow1:nth-of-type(7) {
+    left: 70%;
+    -webkit-animation-delay: 2.5s, 1s;
+    animation-delay: 2.5s, 1s;
+  }
+  .snow1:nth-of-type(8) {
+    left: 80%;
+    -webkit-animation-delay: 1s, 0s;
+    animation-delay: 1s, 0s;
+  }
+  .snow1:nth-of-type(9) {
+    left: 90%;
+    -webkit-animation-delay: 3s, 1.5s;
+    animation-delay: 3s, 1.5s;
+  }
+  .snow1:nth-of-type(10) {
+    left: 25%;
+    -webkit-animation-delay: 2s, 0s;
+    animation-delay: 2s, 0s;
+  }
+  .snow1:nth-of-type(11) {
+    left: 65%;
+    -webkit-animation-delay: 4s, 2.5s;
+    animation-delay: 4s, 2.5s;
+  }
+  .drag-toys-container{
+    max-width: 390px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 8px;
+    row-gap: 20px;
+  }
+.drag-toys-card{
+    max-width: 80px;
+    width: 100%;
+    min-height: 80px;
+    background: radial-gradient(109.56% 109.56% at 0% -2.94%, rgba(255, 255, 255, 0.5) 0%, rgba(179, 246, 255, 0.5) 100%);
+    backdrop-filter: blur(4px);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* position: relative; */
+}  
+.drag-toys-count{
+    width: 22px;
+    height: 19px;
+    background: #24C5DB;
+    border-radius: 10px;
+    align-self: flex-end;
+    text-align: center;
+}
+  
+.img-for-drag{
+  width: 50px;
+  height: 55px;
+  max-width: 100%;
+  object-fit: cover;
+  /* position: absolute; */
+  /* z-index: 200; */
+}

@@ -3,7 +3,6 @@ import {Route} from "react-router-dom";
 import StartPage from "./startPage";
 import ToysPage from "./toysPage";
 import ThreePage from "./christmasTreePage";
-import { HashRouter as Router } from "react-router-dom"
 
 export const START_PATH = '/start';
 export const TOYS_PATH = '/toys';

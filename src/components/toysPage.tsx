@@ -46,10 +46,14 @@ const ToysPage = ()=>{
    
 
     const [filtredArr, setFiltredArr] = useState<Array<ToyType>>([])
+
     useEffect(()=>{
       setFiltredArr(filtredArrFromRedux)
     }, [filtredArrFromRedux])
 
+   useEffect(()=>{
+
+   },[filtredArr])
 
    const changeFilter = (color?: string, form?: string, size?: string, isLik?: boolean) => {
 
@@ -248,6 +252,7 @@ const ToysPage = ()=>{
 
    },[filtredArr])
 
+   console.log(filtredArr)
    const closeSecondPopup=()=>{
       setIsActive(false)
    }

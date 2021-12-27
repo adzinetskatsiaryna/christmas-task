@@ -6,13 +6,14 @@ import Routs from './components/routs';
 import Footer from './components/footer';
 import { HashRouter as Router } from "react-router-dom"
 
+
 function App() {
   
   return (
     <div className="App">
         <Router>
-            <Header/>
-            <Routs />     
+          <Header/>
+          <Routs />      
         </Router>
         <Footer/>
     </div>

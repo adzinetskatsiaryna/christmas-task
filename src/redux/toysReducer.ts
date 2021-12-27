@@ -7,7 +7,7 @@ import { filterObj } from "./utils";
 export type ToyType = {
     num: string
     name: string
-    count: string
+    count: string  | number
     year: string
     shape: string
     color: string
@@ -46,8 +46,7 @@ const ToysReducer = (state: InitialState = initialState, action: ActionType): In
     case 'SET_FILTERED_ARR':
       return {
       ...state,
-      filtredArr:action.filteredArr
-               
+      filtredArr:action.filteredArr           
     };
 
     case 'SET_FILTERS_ARR':
