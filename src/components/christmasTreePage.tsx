@@ -58,7 +58,7 @@ const TreePage = ()=>{
    }
 
    
-  // const isPlaingAsString = Boolean(localStorage.getItem('isPlaing'))
+  const isPlaingAsString = Boolean(localStorage.getItem('isPlaing'))
 
    const [isPlaing, setIsplaing]= useState(false)
 
@@ -149,17 +149,15 @@ const allowDrop = (event: React.DragEvent<HTMLDivElement>) => {
 
 const dropHandler = (e:DragEvent<HTMLImageElement>|DragEvent<HTMLAreaElement>)=>{
    
- const width1 = document.querySelector<HTMLDivElement>('.tree-page-container')?.offsetWidth
+ const width1: number| undefined = document.querySelector<HTMLDivElement>('.tree-page-container')!.offsetWidth
 
- const width2 =document.querySelector<HTMLDivElement>('.selected-background')?.offsetWidth
+ const width2: number| undefined=document.querySelector<HTMLDivElement>('.selected-background')!.offsetWidth
 
- const width3=document.querySelector<HTMLDivElement>('.tree-toys-container')?.offsetWidth
+ const width3: number| undefined =document.querySelector<HTMLDivElement>('.tree-toys-container')!.offsetWidth
 
- const width4=document.querySelector<HTMLDivElement>('.tree-filters')?.offsetWidth
- //@ts-ignore
- let width = width1 - width2  -width3 - width4
- 
-
+ const width4  = document.querySelector<HTMLDivElement>('.tree-filters')!.offsetWidth
+ const width: number = width1 - width2  -width3 - width4
+   
    e.preventDefault()
    
    const x =board.find((b)=>{
@@ -168,15 +166,14 @@ const dropHandler = (e:DragEvent<HTMLImageElement>|DragEvent<HTMLAreaElement>)=>
 
    if(!x){
       setBoard([...board, { toy:currentToy,
-       //@ts-ignore  
+        
       x: e?.clientX - (width/2 + 20  + width4),
-       y: e?.clientY + window.scrollY -150,
+       y: e?.clientY + window.scrollY - 150,
       key: key}])
    }else {
-      //переместили
-      //@ts-ignore
+      //переместили  
       x.x = e?.clientX - (width/2 + 20 + width4)
-      x.y=e?.clientY + window.scrollY-150
+      x.y=e?.clientY + window.scrollY - 150
       setBoard([...board])
    }
   
@@ -197,8 +194,6 @@ const dropForLi =(e:DragEvent<HTMLImageElement>|DragEvent<HTMLDivElement>)=>{
    }
   
 }
-
-
    return (
         <div className="tree-page">
            <div className="tree-page-container">
@@ -246,8 +241,7 @@ const dropForLi =(e:DragEvent<HTMLImageElement>|DragEvent<HTMLDivElement>)=>{
               >
               <img    useMap="#tree-map" src={`https://raw.githubusercontent.com/adzinetskatsiaryna/christmas-data/main/assets/tree/${treeNum}.png`} alt="tree" />
                
-               {board.map(t=>{
-                       //@ts-ignore
+               {board.map(t=>{       
                        return <img key={t.key} src={`https://raw.githubusercontent.com/adzinetskatsiaryna/christmas-data/main/assets/toys/${t.toy.num}.png`} 
                        onDragStart = {(e:DragEvent<HTMLImageElement>)=>dragStartHandler(e, t.toy, t.key)} 
                        onDragOver={(e:DragEvent<HTMLImageElement>)=>dragOverHandler(e)} 
